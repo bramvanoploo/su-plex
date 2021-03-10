@@ -12,7 +12,7 @@ function createWindow () {
     useContentSize: false,
     fullscreenable: false,
     simpleFullscreen: false,
-    backgroundColor: '#1E1E1E',
+    backgroundColor: '#1f2326',
     darkTheme: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
