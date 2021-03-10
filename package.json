@@ -1,0 +1,51 @@
+{
+  "name": "su-plex",
+  "version": "0.1.0",
+  "description": "Electron wrapper for the Plex web application",
+  "main": "main.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "npm install && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -mwl"
+  },
+  "repository": "https://github.com/bramvanoploo/su-plex",
+  "keywords": [
+    "Electron",
+    "Plex",
+    "Desktop",
+    "Client"
+  ],
+  "author": "Bram van Oploo",
+  "license": "GNU GPL3",
+  "devDependencies": {
+    "electron": "latest",
+    "electron-builder": "latest",
+    "electron-builder-squirrel-windows": "^22.10.5"
+  },
+  "dependencies": {
+    "electron-localshortcut": "^3.2.1"
+  },
+  "build": {
+    "appId": "com.electron.sanoma-community",
+    "mac": {
+      "category": "public.app-category.social-networking",
+      "icon": "build/icon.icns",
+      "darkModeSupport": true,
+      "type": "distribution"
+    },
+    "linux": {
+      "category": "Development",
+      "target": [
+        "AppImage",
+        "snap",
+        "deb",
+        "rpm"
+      ]
+    },
+    "win": {
+      "target": "squirrel",
+      "icon": "build/icon.ico"
+    }
+  }
+}
