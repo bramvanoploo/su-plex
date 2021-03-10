@@ -27,25 +27,19 @@
     "electron-localshortcut": "^3.2.1"
   },
   "build": {
-    "appId": "com.electron.sanoma-community",
+    "appId": "com.electron.su-plex",
     "mac": {
-      "category": "public.app-category.social-networking",
+      "category": "public.app-category.video",
       "icon": "build/icon.icns",
       "darkModeSupport": true,
       "type": "distribution"
     },
     "linux": {
-      "category": "Development",
+      "category": "AudioVideo",
       "target": [
         "AppImage",
-        "snap",
-        "deb",
-        "rpm"
+        "snap"
       ]
-    },
-    "win": {
-      "target": "squirrel",
-      "icon": "build/icon.ico"
     }
   }
 }
